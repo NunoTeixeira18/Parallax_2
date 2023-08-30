@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.wrapper {
+    height: 120vh;
+    overflow-y:auto;
+    overflow-x: hidden;
+    perspective: 10px ;
+    background-color: rgb(0 0 128);
+}
+
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1
+}
+
+
+.sky, .sun, .mountain, .valley_1, .valley_2, .valley_3, .valley_4, .bear, .birds {
+    position: absolute;
+    height: 100%;
+    width: 100%;  
+    object-fit: cover;
+    z-index: -1;
+}  
+
+
+.sky {
+    transform: translateZ(-60px) scale(8);
+}
+
+.sun {
+    transform: translateZ(-47px) scale(6);
+}
+
+.mountain {
+    transform: translateZ(-40px) scale(5.5);
+}
+
+.valley_1 {
+    transform: translateZ(-30px) scale(4.5);
+}
+
+.valley_2 {
+    transform: translateZ(-20px) scale(3.5);
+}
+
+.valley_3 {
+    transform: translateZ(-10px) scale(2.2);
+}
+
+
+.birds {
+    transform: translateZ(-30px) scale(3.7);
+}
+
+
+.title {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    font-weight:600;
+    color: white;
+    margin: auto;
+    padding-bottom: 40vh;
+}
+
+.sub-title {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    padding: 2rem;
+    background-color: rgb(0 0 128);
+    border: none;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+section {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    padding: 5rem;
+    background-color: rgb(0 0 128);
+    color: white;
+}
+
+.nav-bar {
+    display: inline-block;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    
+    .logo {
+        text-decoration: none;
+        color: white;
+    }
+
+    li  {
+        
+    }
+}
+
+
+
